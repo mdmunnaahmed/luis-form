@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- datepicker -->
+    <link rel="stylesheet" href="./assets/css/datepicker.min.css">
+    <link rel="stylesheet" href="./assets/css/select2.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <title>Salesscorekeeper - An Online Sales Management and Information Tool</title>
+</head>
+
+<body>
+
+    <!-- top toolbar start -->
+    <div class="top-toolbar-area">
+        <div class="custom-container">
+            <ul class="top-toolbar-wrapper">
+                <li><a href="" class="active"><img src="./assets/images/1.png" alt="images">Approve</a></li>
+                <li><a href=""><img src="./assets/images/2.png" alt="images">Decline</a></li>
+                <li><a href=""><img src="./assets/images/3.png" alt="images">Save</a></li>
+                <li><a href="" class="fs-10"><img src="./assets/images/3.png" alt="images">Save <br>
+                        Close</a></li>
+                <li><a href=""><img src="./assets/images/4.png" alt="images">Cancel</a></li>
+                <li><a href=""><img src="./assets/images/5.png" alt="images">Snapshot</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- top toolbar end -->
+
+    <!-- transaction info form start -->
+    <div class="transaction-info">
+        <div class="custom-container">
+            <div class="transaction-info-wrapper">
+                <div class="transaction-text">Transaction Info</div>
+                <form action="" class="transaction-form">
+                    <div class="form-group">
+                        <div class="input--group">
+                            <label for="">Date</label>
+                            <input type="text" class="datepicker-here form--control" data-language='en'
+                                data-position='bottom left' placeholder="Select date">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input--group">
+                            <label for="">Customer Name</label>
+                            <input type="text" class="form--control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input--group">
+                            <label for="">Sales Rep</label>
+                            <input type="text" class="form--control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input--group">
+                            <label for="">Period</label>
+                            <a href="#0" class="custom-select">
+                                <select class="select2-basic form-control form--control" name="state">
+                                    <option value="AL">January, 2024</option>
+                                    <option value="AL">January, 2024</option>
+                                    <option value="WY">February, 2024</option>
+                                    <option value="OL">March, 2024</option>
+                                    <option value="HU">April, 2024</option>
+                                    <option value="WU">May, 2024</option>
+                                    <option value="PO">June, 2024</option>
+                                    <option value="ZI">August, 2024</option>
+                                    <option value="ZI">July, 2024</option>
+                                    <option value="ZI">September, 2024</option>
+                                    <option value="ZI">October, 2024</option>
+                                    <option value="ZI">November, 2024</option>
+                                    <option value="ZI">December, 2024</option>
+                                </select>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input--group">
+                            <label for="">Customer Number</label>
+                            <input type="text" class="form--control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input--group">
+                            <label for="">Sales Manager</label>
+                            <input type="text" class="form--control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input--group">
+                            <label for="">Sales Manager</label>
+                            <input type="text" class="form--control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input--group">
+                            <label for="">Sales Rep</label>
+                            <input type="text" class="form--control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input--group">
+                            <label for="">Customer Number</label>
+                            <input type="text" class="form--control">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- transaction info form end -->
+
+    <!-- tab content start -->
+    <div class="tab-content-area">
+        <div class="custom-container">
+            <div class="tab-content-wrapper">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#cpc-worksheet">CPC
+                            Worksheet</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#commission-form">Commission
+                            Form</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#it-comm-sheet">IT Comm
+                            Sheet</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#financials">Financials</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#product-config">Product
+                            Config</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#adjustments">Adjustments</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#sales-rep-splits">Sales Rep
+                            Splits</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#commission-changes">Commission
+                            Changes</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#notes">Notes</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#file-keeper">File Keeper</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#bam-checklist">BAM
+                            Checklist</button>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="cpc-worksheet">
+                        <div class="cmn-tab-content-wrapper">
+                            <div class="window-title">Window Name</div>
+                            <form action="" class="window-form">
+                                <div class="row g-5">
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <div class="input--group">
+                                                <label for="">Monthly Copies (b&w)</label>
+                                                <input type="text" class="form--control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input--group">
+                                                <label for="">POA CPC (b&w)</label>
+                                                <input type="text" class="form--control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input--group">
+                                                <label for="">Monthly Cost(b&w)</label>
+                                                <input type="text" class="form--control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input--group">
+                                                <label for="">Monthly Cost(color)</label>
+                                                <input type="text" class="form--control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input--group">
+                                                <label for="">POA CPC(color)</label>
+                                                <input type="text" class="form--control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input--group">
+                                                <label for="">Monthly Cost(color)</label>
+                                                <input type="text" class="form--control">
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <div class="input--group">
+                                                <label for="">Total Monthly Cost</label>
+                                                <input type="text" class="form--control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input--group">
+                                                <label for="">Less Service Credit</label>
+                                                <input type="text" class="form--control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input--group">
+                                                <label for="">Monthly Service Payment</label>
+                                                <input type="text" class="form--control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="" class="trasnX">Divide By Rate Factor</label>
+                                            <div class="input--group gap-5">
+                                                <div>
+                                                    <input type="text" class="form--control">
+                                                    <div class="text-center">$ Down</div>
+                                                </div>
+                                                <div>
+                                                    <input type="text" class="form--control">
+                                                    <div class="text-center">Rate</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <div class="input--group">
+                                                <label for="">Total Monthly Lease Payment</label>
+                                                <input type="text" class="form--control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input--group">
+                                                <label for="">Less Monthly Service Payment</label>
+                                                <input type="text" class="form--control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input--group">
+                                                <label for="">Equals Monthly Equipment Payment</label>
+                                                <input type="text" class="form--control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input--group">
+                                                <label for="">Equipment Funding</label>
+                                                <input type="text" class="form--control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input--group">
+                                                <label for="">Plus One Year Service</label>
+                                                <input type="text" class="form--control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input--group">
+                                                <label for="">Total Quota Billing</label>
+                                                <input type="text" class="form--control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="window-bottom-text">Equipment</div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="commission-form">
+                        <div class="cmn-tab-content-wrapper">
+                            <div class="window-title">Window Name</div>
+                            <div class="form-content-wrapper">
+                                <form action="" class="window-form">
+                                    <div class="row g-5">
+                                        <div class="col-lg-7">
+                                            <div class="row gx-5">
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <div class="input--group align-items-center">
+                                                            <label for="">Lease Company</label>
+                                                            <select class="form-select form--control"
+                                                                aria-label="Default select example">
+                                                                <option selected>select menu</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="input--group">
+                                                            <label for="">Term</label>
+                                                            <input type="text" class="form--control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="input--group">
+                                                            <label for="">Cash</label>
+                                                            <input type="text" class="form--control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <div class="input--group">
+                                                            <label for="">Payment</label>
+                                                            <input type="text" class="form--control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="input--group">
+                                                            <label for="">Rate</label>
+                                                            <input type="text" class="form--control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="input--group">
+                                                            <label for="">Cash From Customer</label>
+                                                            <input type="text" class="form--control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="input--group">
+                                                            <label for="">To Fax Rep</label>
+                                                            <input type="text" class="form--control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="input--group">
+                                                            <label for="">Total</label>
+                                                            <input type="text" class="form--control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="service-text mt-4">Equipment</div>
+                                            <div class="form-group mt-2">
+                                                <div class="input--group gap-4">
+                                                    <label for="" class="w-100">Less Supplies Included</label>
+                                                    <input type="text" class="form--control">
+                                                    <input type="text" class="form--control">
+                                                    <input type="text" class="form--control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input--group gap-4">
+                                                    <label for="" class="w-100">Less Copy Kit</label>
+                                                    <input type="text" class="form--control">
+                                                    <input type="text" class="form--control">
+                                                    <input type="text" class="form--control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input--group gap-4">
+                                                    <label for="" class="w-100">Less Copy Kit: CPC(1 year)</label>
+                                                    <input type="text" class="form--control">
+                                                    <input type="text" class="form--control">
+                                                    <input type="text" class="form--control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input--group gap-4">
+                                                    <label for="" class="w-100">Less Delivery & Connection</label>
+                                                    <input type="text" class="form--control">
+                                                    <input type="text" class="form--control">
+                                                    <input type="text" class="form--control">
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="form-group">
+                                                        <div class="input--group">
+                                                            <label for="" class="w-100">Lease Upgrade / Buyout</label>
+                                                            <input type="text" class="form--control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="input--group">
+                                                            <label for="" class="w-100">Rtn Shipping / Ship to
+                                                                Dealer</label>
+                                                            <input type="text" class="form--control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="input--group">
+                                                            <label for="" class="w-100">Dealer Install</label>
+                                                            <input type="text" class="form--control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="input--group">
+                                                            <label for="" class="w-100">Dealer Svc</label>
+                                                            <input type="text" class="form--control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="input--group">
+                                                            <label for="" class="w-100">Check to Customer</label>
+                                                            <input type="text" class="form--control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="input--group">
+                                                            <label for="" class="w-100">Less Cost of Sales</label>
+                                                            <input type="text" class="form--control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="input--group">
+                                                            <label for="" class="w-100">Plus Added Value</label>
+                                                            <input type="text" class="form--control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="input--group">
+                                                            <label for="" class="w-100">Total Buyout</label>
+                                                            <input type="text" class="form--control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-5">
+                                            <div class="form-group">
+                                                <div class="input--group">
+                                                    <label for="" class="w-100">TPayment Lease Quota Biling</label>
+                                                    <input type="text" class="form--control">
+                                                </div>
+                                            </div>
+                                            <div class="service-text">Service & Supplies</div>
+                                            <div class="form-group">
+                                                <div class="input--group">
+                                                    <label for="">Service(b&w)</label>
+                                                    <input type="text" class="form--control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input--group">
+                                                    <label for="">Service(color)</label>
+                                                    <input type="text" class="form--control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input--group">
+                                                    <label for="">Supplies(b&w)</label>
+                                                    <input type="text" class="form--control">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input--group">
+                                                    <label for="">Supplies(color)</label>
+                                                    <input type="text" class="form--control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- tab content end -->
+
+
+
+
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/datepicker.min.js"></script>
+    <script src="./assets/js/datepicker.en.js"></script>
+    <script src="./assets/js/select2.min.js"></script>
+    <script>
+        // date picker 
+        $('.datepicker-here').datepicker();
+    </script>
+    <script>
+        // js for Multiple select-2 with tokenize
+        $(".select2-basic").select2({
+            tags: true,
+            tokenSeparators: [',']
+        });
+    </script>
+</body>
+
+</html>
